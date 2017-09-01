@@ -96,13 +96,13 @@ require(['jquery'],function ($) {
             case 'product':
                 $('#page_product_url').prop('disabled', false);
                 $('#page_category_url').prop('disabled', true);
-                $('#page_click_url').prop('disabled', true);
+                $('#page_click_url').prop('readonly', true);
                 $('#page_click_url').val('') ;
                 break;
             case 'category':    
                 $('#page_product_url').prop('disabled', true);
                 $('#page_category_url').prop('disabled', false);
-                $('#page_click_url').prop('disabled', true);
+                $('#page_click_url').prop('readonly', true);
                 $('#page_click_url').val('');
                 break;
             case 'custom':    
