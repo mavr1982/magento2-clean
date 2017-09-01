@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Mavgento
+ *
+ *
+ *
+ * @category    Mavgento
+ * @package     Mavgento_Custombanner
+ * @copyright   
+ * @license     
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <update handle="formkey"/>
+    <head>
+    	<title>Slider Manager</title>
+    </head>
+    <body>
+    	<referenceBlock name="menu">
+    	    <action method="setActive">
+    	        <argument name="itemId" xsi:type="string">Mavgento_Custombanner::custombanner</argument>
+    	    </action>
+    	</referenceBlock>
+    	<referenceBlock name="page.title">
+    	    <action method="setPageTitle">
+    	        <argument name="pageTitle" xsi:type="string">Slider Manager</argument>
+    	    </action>
+    	</referenceBlock>
+        <referenceContainer name="content">
+            <block class="Mavgento\Custombanner\Block\Adminhtml\Slider" name="admin.block.slider.grid.container"/>
+        </referenceContainer>
+		<!--<referenceContainer name="content">-->
+			<!--<uiComponent name="slider_grid_listing"/>-->
+		<!--</referenceContainer>-->
+    </body>
+</page>

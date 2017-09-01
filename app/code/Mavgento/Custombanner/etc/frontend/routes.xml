@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Mavgento
+ *
+ *
+ *
+ * @category    Mavgento
+ * @package     Mavgento_Custombanner
+ * @copyright   
+ * @license     
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="standard">
+        <route id="custombanner" frontName="custombanner">
+            <module name="Mavgento_Custombanner" />
+        </route>
+    </router>
+</config>

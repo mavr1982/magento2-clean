@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Mavgento
+ *
+ *
+ *
+ * @category    Mavgento
+ * @package     Mavgento_Custombanner
+ * @copyright   
+ * @license     
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+    <body>
+    	<referenceContainer name="right">
+    		<block class="Mavgento\Custombanner\Block\Custombanner" name="custombanner.sidebar.right.top" before="-">
+    			<action method="setPosition">
+    				<argument name="position" xsi:type="string">sidebar-right-top</argument>
+    			</action>
+    		</block>
+    		<block class="Mavgento\Custombanner\Block\Custombanner" name="custombanner.sidebar.right.bottom">
+    			<action method="setPosition">
+    				<argument name="position" xsi:type="string">sidebar-right-bottom</argument>
+    			</action>
+    		</block>
+    	</referenceContainer>
+    	<referenceContainer name="left">
+    		<block class="Mavgento\Custombanner\Block\Custombanner" name="custombanner.sidebar.left.top" before="-">
+    			<action method="setPosition">
+    				<argument name="position" xsi:type="string">sidebar-left-top</argument>
+    			</action>
+    		</block>
+    		<block class="Mavgento\Custombanner\Block\Custombanner" name="custombanner.sidebar.left.bottom">
+    			<action method="setPosition">
+    				<argument name="position" xsi:type="string">sidebar-left-bottom</argument>
+    			</action>
+    		</block>
+    	</referenceContainer>
+		<referenceContainer name="before.body.end">
+			<block class="Mavgento\Custombanner\Block\Custombanner" name="custombanner.page.bottom">
+				<action method="setPosition">
+					<argument name="position" xsi:type="string">page-bottom</argument>
+				</action>
+			</block>
+		</referenceContainer>
+    	<referenceContainer name="content">
+    		<block class="Mavgento\Custombanner\Block\Custombanner" name="custombanner.content.top" before="-">
+    			<action method="setPosition">
+    				<argument name="position" xsi:type="string">content-top</argument>
+    			</action>
+    		</block>
+            <block class="Mavgento\Custombanner\Block\Custombanner" name="custombanner.note.all.site">
+                <action method="setPositionNote" />
+            </block>
+    	</referenceContainer>
+    	<referenceBlock name="header.container">
+    		<block class="Mavgento\Custombanner\Block\Custombanner" name="custombanner.menu.top"  before="-" >
+    			<action method="setPosition">
+    				<argument name="position" xsi:type="string">menu-top</argument>
+    			</action>
+    		</block>
+    	</referenceBlock>
+    	<referenceBlock name="page.top">
+    		<block class="Mavgento\Custombanner\Block\Custombanner" name="custombanner.menu.bottom" >
+    			<action method="setPosition">
+    				<argument name="position" xsi:type="string">menu-bottom</argument>
+    			</action>
+    		</block>
+    	</referenceBlock>
+    </body>
+</page>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Mavgento
+ *
+ *
+ *
+ * @category    Mavgento
+ * @package     Mavgento_Custombanner
+ * @copyright   
+ * @license     
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <update handle="formkey"/>
+    <head>
+    	<title>Report Manager</title>
+    </head>
+    <body>
+    	<referenceBlock name="menu">
+    	    <action method="setActive">
+    	        <argument name="itemId" xsi:type="string">Mavgento_Custombanner::custombanner</argument>
+    	    </action>
+    	</referenceBlock>
+    	<referenceBlock name="page.title">
+    	    <action method="setPageTitle">
+    	        <argument name="pageTitle" xsi:type="string">Report Clicks and Impressions of a Banner in all Sliders</argument>
+    	    </action>
+    	</referenceBlock>
+        <referenceContainer name="content">
+            <block class="Mavgento\Custombanner\Block\Adminhtml\Report" name="admin.block.report.grid.container"/>
+        </referenceContainer>
+    </body>
+</page>

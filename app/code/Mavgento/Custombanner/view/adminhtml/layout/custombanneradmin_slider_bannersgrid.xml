@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Mavgento
+ *
+ *
+ *
+ * @category    Mavgento
+ * @package     Mavgento_Custombanner
+ * @copyright   
+ * @license     
+ */
+-->
+<layout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/layout_generic.xsd">
+    <container name="root" label="Root">
+        <block class="Mavgento\Custombanner\Block\Adminhtml\Slider\Edit\Tab\Banners" name="custombanner.slider.edit.tab.banners"/>
+    </container>
+</layout>

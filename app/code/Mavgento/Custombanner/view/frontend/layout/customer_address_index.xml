@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Mavgento
+ *
+ *
+ *
+ * @category    Mavgento
+ * @package     Mavgento_Custombanner
+ * @copyright   
+ * @license     
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block class="Mavgento\Custombanner\Block\Custombanner" name="custombanner" >
+            	<action method="setPosition">
+            		<argument name="position" xsi:type="string">customer-content-top</argument>
+            	</action>
+            </block>
+        </referenceContainer>
+        <referenceContainer name="left">
+            <block class="Mavgento\Custombanner\Block\Custombanner" name="custombanner" >
+                <action method="setPosition">
+                    <argument name="position" xsi:type="string">sidebar-left-bottom</argument>
+                </action>
+            </block>
+        </referenceContainer>
+    </body>
+</page>

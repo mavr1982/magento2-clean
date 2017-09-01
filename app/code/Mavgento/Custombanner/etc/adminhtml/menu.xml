@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Mavgento
+ *
+ *
+ *
+ * @category    Mavgento
+ * @package     Mavgento_Custombanner
+ * @copyright   
+ * @license     
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+    	<add id="Mavgento_Custombanner::custombanner" title="Banner Slider" module="Mavgento_Custombanner" sortOrder="10" resource="Mavgento_Custombanner::custombanner" parent="Magento_Backend::content"/>
+
+        <!-- Mavgento_Custombanner::custombanner_custombanner -->
+
+		<add id="Mavgento_Custombanner::custombanner_sliders" title="Manage Sliders" module="Mavgento_Custombanner" sortOrder="10" parent="Mavgento_Custombanner::custombanner" action="custombanneradmin/slider" resource="Mavgento_Custombanner::custombanner_sliders"/>
+
+        <add id="Mavgento_Custombanner::custombanner_banners" title="Manage Banners" module="Mavgento_Custombanner" sortOrder="10" parent="Mavgento_Custombanner::custombanner" action="custombanneradmin/banner" resource="Mavgento_Custombanner::custombanner_banners"/>
+
+        <add id="Mavgento_Custombanner::custombanner_coreslider" title="Preview Slider Styles" module="Mavgento_Custombanner" sortOrder="10" parent="Mavgento_Custombanner::custombanner" action="custombanneradmin/coreslider" resource="Mavgento_Custombanner::custombanner_coreslider"/>
+
+        <!-- Mavgento_Custombanner::custombanner_reports -->
+        <add id="Mavgento_Custombanner::custombanner_reports_perslider" title="Reports Per Slider" module="Mavgento_Custombanner" sortOrder="10" parent="Mavgento_Custombanner::custombanner" action="custombanneradmin/report" resource="Mavgento_Custombanner::custombanner_reports_perslider"/>
+        <add id="Mavgento_Custombanner::custombanner_reports_allslider" title="Reports All Sliders" module="Mavgento_Custombanner" sortOrder="10" parent="Mavgento_Custombanner::custombanner" action="custombanneradmin/report/banner" resource="Mavgento_Custombanner::custombanner_reports_allslider"/>
+        <!-- End Mavgento_Custombanner::custombanner_reports -->
+
+        <add id="Mavgento_Custombanner::settings" title="Settings" module="Mavgento_Custombanner" sortOrder="20" parent="Mavgento_Custombanner::custombanner" action="adminhtml/system_config/edit/section/custombanner" resource="Mavgento_Custombanner::settings"/>
+
+        <!-- End Mavgento_Custombanner::custombanner_custombanner -->
+    </menu>
+</config>

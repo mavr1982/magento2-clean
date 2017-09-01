@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * Mavgento
+ *
+ *
+ *
+ * @category    Mavgento
+ * @package     Mavgento_Custombanner
+ * @copyright   
+ * @license     
+ */
+
+?>
+<?php if ($block->isShowTitle() == 1) :
+?>
+<div class="mavgento-custombanner-title" style="font: bold 12px/16px Arial, Helvetica, sans-serif;text-transform: uppercase;color: #e26703;">
+	<strong><span><?php echo $block->escapeHtml($block->getSlider()->getTitle()); ?></span></strong>
+</div>
+<?php endif; ?>
+<div class="mavgento-custombanner-custom">
+	<?php echo $block->escapeHtml($block->getSlider()->getCustomCode()); ?>
+</div>

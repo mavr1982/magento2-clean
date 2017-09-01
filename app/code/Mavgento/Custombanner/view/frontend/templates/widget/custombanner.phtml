@@ -1,0 +1,18 @@
+<?php
+/**
+ * Mavgento
+ *
+ *
+ *
+ * @category    Mavgento
+ * @package     Mavgento_Custombanner
+ * @copyright   
+ * @license     
+ */
+?>
+<div class="mavgento-custombanner widget-custombanner">
+    <?php
+    $sliderId = $block->getData('slider');
+    echo $this->getLayout()->createBlock("Mavgento\Custombanner\Block\SliderItem")->setSliderId($sliderId)->toHtml();
+    ?>
+</div>
